@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
-* Студент: [Willy Kostet](https://up.htmlacademy.ru/htmlcss/28/user/1359281).
-* Наставник: `Неизвестно`.
+- Студент: [Willy Kostet](https://up.htmlacademy.ru/htmlcss/28/user/1359281).
+- Наставник: `Андрей Гинтер`.
 
 ---
 
