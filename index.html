@@ -24,20 +24,117 @@
       </nav>
     </header>
     <main>
-      <h1 class="visually-hidden">Седона</h1>
-      <section>
+      <section class="intro">
+        <h1 class="visually-hidden">Седона</h1>
+        <img src="img/main.jpg" alt="Горы Седоны" />
         <img
           width="457px"
           height="351px"
           src="img/intro-welcome.svg"
-          alt="Добро пожаловать в Седону, ведь гранд каньон - отстой!"
+          alt="Добро пожаловать в прекрасную Седону"
         />
+        <img
+          src="img/intro-mask.svg"
+          alt=" Седона, ведь гранд каньон - отстой!"
+        />
+      </section>
+      <section class="reasons-why">
         <p>
           Седона — небольшой городок в Аризоне,<br />
           заслуживающий большего!
         </p>
-        <h2 class="visually-hidden">Причины</h2>
-        <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        <h2>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</h2>
+        <div class="reasons-row">
+          <div class="reason">
+            <h3>
+              Настоящий <br />
+              городок
+            </h3>
+            <p>— №1 —</p>
+            <p>
+              Седона - не аттракцион для туристов, там <br />
+              течёт своя жизнь
+            </p>
+          </div>
+          <img src="img/house.jpg" alt="Один из красивых домов Седоны" />
+        </div>
+        <div class="reasons-row">
+          <ul>
+            <li>
+              <div class="icon"></div>
+              <h3>Жилье</h3>
+              <p>
+                Рекомендуем пожить в настоящем <br />
+                мотеле, всё как в кино!
+              </p>
+            </li>
+            <li>
+              <div class="icon"></div>
+              <h3>Еда</h3>
+              <p>
+                Всегда заказывайте фирменный бургер, <br />
+                вы не разочаруетесь!
+              </p>
+            </li>
+            <li>
+              <div class="icon"></div>
+              <h3>Сувениры</h3>
+              <p>
+                Не только китайского, но и местного <br />
+                производства!
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div class="reasons-row">
+          <img src="img/canyon.jpg" alt="Каньон в Седоне" />
+          <div class="reason">
+            <h3>
+              Там есть <br />
+              Мост дьявола
+            </h3>
+            <p>— №2 —</p>
+            <p>
+              Да, по нему можно пройти! Если конечно <br />
+              вы осмелитесь
+            </p>
+          </div>
+        </div>
+        <div class="reasons-row">
+          <div class="reason">
+            <h3>
+              Небольшая <br />
+              Площадь
+            </h3>
+            <p>— №3 —</p>
+            <p>
+              все достопримечательности <br />
+              находятся очень близко
+            </p>
+          </div>
+          <div class="reason">
+            <h3>
+              Красивая <br />
+              Дорога
+            </h3>
+            <p>— №4 —</p>
+            <p>
+              ехать в седону из лас-вегаса совсем <br />
+              не скучно!
+            </p>
+          </div>
+          <div class="reason">
+            <h3>
+              Мало <br />
+              туристов
+            </h3>
+            <p>— №5 —</p>
+            <p>
+              большинство едет в гранд каньон <br />
+              и толпится там
+            </p>
+          </div>
+        </div>
       </section>
       <section>
         <p>
@@ -48,8 +145,61 @@
           и мы покажем вам лучшие предложения гостиниц в седоне
         </p>
         <div class="searchform">
-          <a href="hotels.html"> <h2>Поиск гостиниц в седоне</h2> </a>
+          <a href="hotels.html"> <h2>Поиск гостиницы в седоне</h2> </a>
         </div>
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <p>
+            <label for="arrival-date">Дата заезда:</label>
+            <div class='date-field'>
+            <input
+              id="arrival-date"
+              type="text"
+              name="date"
+              placeholder="24.04.2017"
+            />
+          </div>
+          </p>
+          <p>
+            <label for="departure-date">Дата выезда:</label>
+            <div class='date-field'>
+            <input
+              id="departure-date"
+              type="text"
+              name="date"
+              placeholder="04.07.2017"
+            />
+          </div>
+          </p>
+        <div>
+          <p>
+            <div>
+            <label for="adults">Взрослые:</label>
+            <input
+              id="adults"
+              type="number"
+              name="number"
+              min="0"
+              placeholder="2"
+            />
+          </div>
+          </p>
+          <p>
+            <div>
+            <label for="kids">Дети:</label>
+            <input
+              id="kids"
+              type="number"
+              name="number"
+              min="0"
+              placeholder="0"
+            />
+          </div>
+          </p>
+        </div>
+        <button type='submit'>Найти</button>
+        </form>
+        <img src="img/map.png" width='1199px'
+        height='594px' alt="Карта Аризоны">
       </section>
     </main>
     <footer>
@@ -72,8 +222,8 @@
         </ul>
       </section>
       <div class="developers">
+        Website by
         <a href="https://htmlacademy.ru">
-          Website by
           <img
             src="img/logo-htmlacademy.svg"
             width="115px"

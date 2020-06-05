@@ -26,7 +26,70 @@
     </header>
     <main>
       <section>
+        <form action="https://echo.htmlacademy.ru" method="get">
+          <fieldset>
+            <legend>Инфраструктура:</legend>
+            <ul>
+              <li>
+                <input type="checkbox" name="pool" id="filter-pool" checked>
+                <label for="filter-pool">Бассейн</label>
+              </li>
+              <li>
+                <input type="checkbox" name="parking" id="filter-parking">
+                <label for="filter-parking">Парковка</label>
+              </li>
+              <li>
+                <input type="checkbox" name="wi-fi" id="filter-wi-fi">
+                <label for="filter-wi-fi">WI-FI</label>
+              </li>
+            </ul>
+            </fieldset>
+            <fieldset>
+              <legend>Тип жилья:</legend>
+              <ul>
+                <li>
+                  <input type="checkbox" name="hotel" id="filter-hotel" checked>
+                  <label for="filter-hotel">Гостиница</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="motel" id="filter-motel" checked>
+                  <label for="filter-motel">Мотель</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="apartments" id="filter-apartments" checked>
+                  <label for="filter-apartments">Апартаменты</label>
+                </li>
+              </ul>
+              </fieldset>
+              <div>
+              <button type="submit">Показать</button>
+              </div>
+        </form>
+        <div class="range">
+          <p>Стоимость в сутки (Р):</p>
+          <p>От 0</p>
+          <p>|</p>
+          <p>До 3000</p>
+          <div class="slider"></div>
+        </div>
+      </section>
+      <section>
         <h1 class="visually-hidden">Список гостиниц</h1>
+        <div>
+        <p>Найдено: 3</p>
+        <div>
+        <p>Сортировка</p>
+        <ul>
+          <li><a href="">По цене</a></li>
+          <li><a href="">По типу</a></li>
+          <li><a href="">По рейтингу</a></li>
+        </ul>
+        <div class="buttons">
+          <button>Стерлка вверх</button>
+          <button>Стерлка вниз</button>
+        </div>
+      </div>
+    </div>
         <ul>
           <li>
             <img src="img/amara.jpg" width="135px" height="90px" alt="" />
