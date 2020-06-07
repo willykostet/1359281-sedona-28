@@ -7,7 +7,7 @@
   <body>
     <header>
       <nav>
-        <a href="index.html">
+        <a>
           <img
             src="img/logo-sedona.svg"
             width="138"
@@ -26,45 +26,34 @@
     <main>
       <section class="intro">
         <h1 class="visually-hidden">Седона</h1>
-        <img src="img/main.jpg" alt="Горы Седоны" />
-        <img
-          width="457px"
-          height="351px"
-          src="img/intro-welcome.svg"
-          alt="Добро пожаловать в прекрасную Седону"
-        />
-        <img
-          src="img/intro-mask.svg"
-          alt=" Седона, ведь гранд каньон - отстой!"
-        />
+        <img src="img/main.jpg" width='1200' height="509" alt="Горы Седоны" />
       </section>
       <section class="reasons-why">
         <p>
-          Седона — небольшой городок в Аризоне,<br />
+          Седона — небольшой городок в Аризоне,
           заслуживающий большего!
         </p>
         <h2>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</h2>
         <div class="reasons-row">
           <div class="reason">
             <h3>
-              Настоящий <br />
+              Настоящий 
               городок
             </h3>
             <p>— №1 —</p>
             <p>
-              Седона - не аттракцион для туристов, там <br />
+              Седона - не аттракцион для туристов, там 
               течёт своя жизнь
             </p>
           </div>
-          <img src="img/house.jpg" alt="Один из красивых домов Седоны" />
+          <img src="img/house.jpg" width="800" height="256" alt="Один из красивых домов Седоны" />
         </div>
-        <div class="reasons-row">
           <ul>
             <li>
               <div class="icon"></div>
               <h3>Жилье</h3>
               <p>
-                Рекомендуем пожить в настоящем <br />
+                Рекомендуем пожить в настоящем 
                 мотеле, всё как в кино!
               </p>
             </li>
@@ -72,7 +61,7 @@
               <div class="icon"></div>
               <h3>Еда</h3>
               <p>
-                Всегда заказывайте фирменный бургер, <br />
+                Всегда заказывайте фирменный бургер, 
                 вы не разочаруетесь!
               </p>
             </li>
@@ -80,126 +69,143 @@
               <div class="icon"></div>
               <h3>Сувениры</h3>
               <p>
-                Не только китайского, но и местного <br />
+                Не только китайского, но и местного 
                 производства!
               </p>
             </li>
           </ul>
-        </div>
         <div class="reasons-row">
-          <img src="img/canyon.jpg" alt="Каньон в Седоне" />
+          <img src="img/canyon.jpg" width="800" height="256" alt="Каньон в Седоне" />
           <div class="reason">
             <h3>
-              Там есть <br />
+              Там есть
               Мост дьявола
             </h3>
             <p>— №2 —</p>
             <p>
-              Да, по нему можно пройти! Если конечно <br />
+              Да, по нему можно пройти! Если конечно 
               вы осмелитесь
             </p>
           </div>
         </div>
-        <div class="reasons-row">
+          <ul>
+            <li>
           <div class="reason">
             <h3>
-              Небольшая <br />
+              Небольшая 
               Площадь
             </h3>
             <p>— №3 —</p>
             <p>
-              все достопримечательности <br />
+              все достопримечательности 
               находятся очень близко
             </p>
           </div>
+        </li>
+        <li>
           <div class="reason">
             <h3>
-              Красивая <br />
+              Красивая 
               Дорога
             </h3>
             <p>— №4 —</p>
             <p>
-              ехать в седону из лас-вегаса совсем <br />
+              ехать в седону из лас-вегаса совсем 
               не скучно!
             </p>
           </div>
+        </li>
+        <li>
           <div class="reason">
             <h3>
-              Мало <br />
+              Мало 
               туристов
             </h3>
             <p>— №5 —</p>
             <p>
-              большинство едет в гранд каньон <br />
+              большинство едет в гранд каньон 
               и толпится там
             </p>
           </div>
-        </div>
+        </li>
+        </ul>
       </section>
       <section>
         <p>
           Заинтересовались?
         </p>
         <p>
-          Укажите предполагаемые даты поездки,<br />
+          Укажите предполагаемые даты поездки,
           и мы покажем вам лучшие предложения гостиниц в седоне
         </p>
         <div class="searchform">
           <a href="hotels.html"> <h2>Поиск гостиницы в седоне</h2> </a>
-        </div>
         <form action="https://echo.htmlacademy.ru" method="post">
           <p>
+            <div>
             <label for="arrival-date">Дата заезда:</label>
             <div class='date-field'>
             <input
               id="arrival-date"
               type="text"
               name="date"
-              placeholder="24.04.2017"
+              value="24.04.2017"
             />
+            <button class="calendar"></button>
           </div>
+        </div>
           </p>
           <p>
+            <div>
             <label for="departure-date">Дата выезда:</label>
             <div class='date-field'>
             <input
               id="departure-date"
               type="text"
               name="date"
-              placeholder="04.07.2017"
+              value="04.07.2017"
             />
+            <button class="calendar"></button>
           </div>
+        </div>
           </p>
         <div>
           <p>
             <div>
             <label for="adults">Взрослые:</label>
+            <div>
+              <button>+</button>
             <input
               id="adults"
-              type="number"
+              type="text"
               name="number"
-              min="0"
-              placeholder="2"
+              value="2"
             />
+            <button>-</button>
+            </div>
           </div>
           </p>
           <p>
             <div>
             <label for="kids">Дети:</label>
+            <div>
+              <button>+</button>
             <input
               id="kids"
-              type="number"
+              type="text"
               name="number"
-              min="0"
-              placeholder="0"
+              value="0"
             />
+            <button>-</button>
+            </div>
           </div>
           </p>
         </div>
         <button type='submit'>Найти</button>
         </form>
-        <img src="img/map.png" width='1199px'
-        height='594px' alt="Карта Аризоны">
+        </div>
+        <img src="img/map.png" width='1199'
+        height='594' alt="Карта Аризоны">
       </section>
     </main>
     <footer>
@@ -226,8 +232,8 @@
         <a href="https://htmlacademy.ru">
           <img
             src="img/logo-htmlacademy.svg"
-            width="115px"
-            height="41px"
+            width="115"
+            height="41"
             alt="Логотип академии"
           />
         </a>
