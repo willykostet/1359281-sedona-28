@@ -3,11 +3,17 @@
   <head>
     <meta charset="utf-8" />
     <title>Willy Kostet: Седона</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/normalize.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
   </head>
-  <body>
-    <header>
-      <nav>
-        <a>
+  <body class="page-body">
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a class="main-header-logo">
           <img
             src="img/logo-sedona.svg"
             width="138"
@@ -15,7 +21,7 @@
             alt="Логотип Седоны"
           />
         </a>
-        <ul>
+        <ul class="site-navigation">
           <li><a href="blank.html">Информация</a></li>
           <li><a href="blank.html">Фото и видео</a></li>
           <li><a href="blank.html">Карта штата</a></li>
@@ -26,10 +32,15 @@
     <main>
       <section class="intro">
         <h1 class="visually-hidden">Седона</h1>
-        <img src="img/main.jpg" width="1200" height="509" alt="Горы Седоны" />
+        <img
+          height="351px"
+          width="457px"
+          src="img/intro-welcome.svg"
+          alt="Добро пожаловать в Седону, ведь Гранд-Каньон-отстой!"
+        />
       </section>
       <section class="reasons-why">
-        <p>
+        <p class="heading">
           Седона — небольшой городок в Аризоне, заслуживающий большего!
         </p>
         <h2>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</h2>
@@ -50,23 +61,23 @@
             alt="Один из красивых домов Седоны"
           />
         </div>
-        <ul>
-          <li>
-            <div class="icon"></div>
+        <ul class="features-list">
+          <li class="feature-item">
+            <div class="icon1"></div>
             <h3>Жилье</h3>
             <p>
               Рекомендуем пожить в настоящем мотеле, всё как в кино!
             </p>
           </li>
-          <li>
-            <div class="icon"></div>
+          <li class="feature-item">
+            <div class="icon2"></div>
             <h3>Еда</h3>
             <p>
               Всегда заказывайте фирменный бургер, вы не разочаруетесь!
             </p>
           </li>
-          <li>
-            <div class="icon"></div>
+          <li class="feature-item">
+            <div class="icon3"></div>
             <h3>Сувениры</h3>
             <p>
               Не только китайского, но и местного производства!
@@ -90,8 +101,8 @@
             </p>
           </div>
         </div>
-        <ul>
-          <li>
+        <ul class="reasons-list">
+          <li class="reason">
             <h3>
               Небольшая Площадь
             </h3>
@@ -100,7 +111,7 @@
               все достопримечательности находятся очень близко
             </p>
           </li>
-          <li>
+          <li class="reason">
             <h3>
               Красивая Дорога
             </h3>
@@ -109,7 +120,7 @@
               ехать в седону из лас-вегаса совсем не скучно!
             </p>
           </li>
-          <li>
+          <li class="reason">
             <h3>
               Мало туристов
             </h3>
@@ -120,20 +131,28 @@
           </li>
         </ul>
       </section>
-      <section>
-        <p>
+      <section class="hotels-search">
+        <p class="interest">
           Заинтересовались?
         </p>
         <p>
           Укажите предполагаемые даты поездки, и мы покажем вам лучшие
           предложения гостиниц в седоне
         </p>
-        <div class="searchform">
-          <a href="hotels.html"> <h2>Поиск гостиницы в седоне</h2> </a>
-          <form action="https://echo.htmlacademy.ru" method="post">
-            <div>
+        <div>
+          <div class="button-wrapper">
+            <a href="#">
+              <h2 class="heading">Поиск гостиницы в седоне</h2>
+            </a>
+          </div>
+          <form
+            class="searchform"
+            action="https://echo.htmlacademy.ru"
+            method="post"
+          >
+            <div class="search-item">
               <label for="arrival-date">Дата заезда:</label>
-              <div class="date-field">
+              <div class="input-wrapper" class="date-field">
                 <input
                   id="arrival-date"
                   type="text"
@@ -143,9 +162,9 @@
                 <button class="calendar" type="button"></button>
               </div>
             </div>
-            <div>
+            <div class="search-item">
               <label for="departure-date">Дата выезда:</label>
-              <div class="date-field">
+              <div class="input-wrapper" class="date-field">
                 <input
                   id="departure-date"
                   type="text"
@@ -156,37 +175,37 @@
               </div>
             </div>
             <div>
-              <div>
+              <div class="search-item">
                 <label for="adults">Взрослые:</label>
-                <div>
-                  <button type="button">+</button>
-                  <input id="adults" type="text" name="number" value="2" />
+                <div class="input-wrapper">
                   <button type="button">-</button>
+                  <input id="adults" type="text" name="number" value="2" />
+                  <button type="button">+</button>
                 </div>
               </div>
-              <div>
+              <div class="search-item">
                 <label for="kids">Дети:</label>
-                <div>
-                  <button type="button">+</button>
-                  <input id="kids" type="text" name="number" value="0" />
+                <div class="input-wrapper">
                   <button type="button">-</button>
+                  <input id="kids" type="text" name="number" value="0" />
+                  <button type="button">+</button>
                 </div>
               </div>
             </div>
-            <button type="submit">Найти</button>
+            <button type="submit" class="search-button">Найти</button>
           </form>
         </div>
         <img src="img/map.png" width="1199" height="594" alt="Карта Аризоны" />
       </section>
     </main>
-    <footer>
+    <footer class="page-footer main-footer">
       <h3 class="visually-hidden">Контакты</h3>
-      <section>
+      <section class="footer-contacts">
         <a href="#"> #visitSEDONA </a>
-        <p>ТЕЛ:<a href="tel:+74956660166">+7(495) 666-01-66</a></p>
+        <p>ТЕЛ: <a href="tel:+74956660166">+7(495) 666-01-66</a></p>
       </section>
       <section>
-        <ul>
+        <ul class="footer-socials">
           <li>
             <a href="#">Твиттер</a>
           </li>

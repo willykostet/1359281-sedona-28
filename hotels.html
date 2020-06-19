@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
     <title>Гостиницы</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/normalize.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
   </head>
-  <body>
-    <header>
-      <nav>
-        <a href="index.html">
+  <body class="page-body">
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a href="index.html" class="main-header-logo">
           <img
             src="img/logo-sedona.svg"
             width="138"
@@ -16,7 +21,7 @@
             alt="Логотип Седоны"
           />
         </a>
-        <ul>
+        <ul class="site-navigation">
           <li><a href="blank.html">Информация</a></li>
           <li><a href="blank.html">Фото и видео</a></li>
           <li><a href="blank.html">Карта штата</a></li>
@@ -25,8 +30,8 @@
       </nav>
     </header>
     <main>
-      <section>
-        <form action="https://echo.htmlacademy.ru" method="get">
+      <section class='filters'>
+        <form class='filter' action="https://echo.htmlacademy.ru" method="get">
           <fieldset>
             <legend>Инфраструктура:</legend>
             <ul>
@@ -63,24 +68,24 @@
               </fieldset>
               <fieldset>
                 <div class="range">
-                  <p>Стоимость в сутки (Р):</p>
+                  <p class='legend'>Стоимость в сутки (Р):</p>
                   <div>
                   <p> От 0 </p>
                   <p> До 3000 </p>
                   </div>
                   <div class="slider"></div>
-                  <button type="submit">Показать</button>
+                  <button class='show-button' type="submit">Показать</button>
                 </div>
               </fieldset>
         </form>
       </section>
       <section>
         <h1 class="visually-hidden">Список гостиниц</h1>
-        <div>
-        <p>Найдено: 3</p>
-        <div>
+        <div class='sorting-row'>
+        <p class='heading'>Найдено: 3</p>
+        <div class='sorting'>
         <p>Сортировка</p>
-        <ul>
+        <ul class='sorting-list'>
           <li><a href="">По цене</a></li>
           <li><a href="">По типу</a></li>
           <li><a href="">По рейтингу</a></li>
@@ -91,18 +96,18 @@
         </div>
       </div>
     </div>
-        <ul>
+        <ul class='hotels-list'>
           <li>
             <img src="img/amara.jpg" width="135" height="90" alt="отель Amara" />
             <div class="mega-container">
-              <h2>Amara Resort & Spa</h2>
+              <h2 class='heading'>Amara Resort & Spa</h2>
               <div class="container">
                 <p>Гостиница</p>
                 <p>от 4000 Р.</p>
               </div>
               <div class="container-2">
-                <a href="product1.html">Подробнее</a>
-                <a href="product1.html">Забронировать</a>
+                <a class='more-button' href="product1.html">Подробнее</a>
+                <a class='book-button' href="product1.html">Забронировать</a>
               </div>
             </div>
             <div class="mega-container-2">
@@ -113,14 +118,14 @@
           <li>
             <img src="img/desert.jpg" width="135" height="90" alt="отель Desert" />
             <div class="mega-container">
-              <h2>Desert Quail Inn</h2>
+              <h2 class='heading'>Desert Quail Inn</h2>
               <div class="container">
                 <p>Мотель</p>
                 <p>от 3000 Р.</p>
               </div>
               <div class="container-2">
-                <a href="product2.html">Подробнее</a>
-                <a href="product2.html">Забронировать</a>
+                <a class='more-button' href="product2.html">Подробнее</a>
+                <a class='book-button' href="product2.html">Забронировать</a>
               </div>
             </div>
             <div class="mega-container-2">
@@ -131,14 +136,14 @@
           <li>
             <img src="img/villas.jpg" width="135" height="90" alt="отель Villas" />
             <div class="mega-container">
-              <h2>Villas at Poco Diablo</h2>
+              <h2 class='heading'>Villas at Poco Diablo</h2>
               <div class="container">
                 <p>Мотель</p>
                 <p>от 3000 Р.</p>
               </div>
               <div class="container-2">
-                <a href="product3.html">Подробнее</a>
-                <a href="product3.html">Забронировать</a>
+                <a class='more-button' href="product3.html">Подробнее</a>
+                <a class='book-button' href="product3.html">Забронировать</a>
               </div>
             </div>
             <div class="mega-container-2">
@@ -149,14 +154,14 @@
         </ul>
       </section>
     </main>
-    <footer>
+    <footer class="page-footer main-footer">
       <h3 class="visually-hidden">Контакты</h3>
-      <section>
+      <section class="footer-contacts">
         <a href="#"> #visitSEDONA </a>
-        <p>ТЕЛ:<a href="tel:+74956660166">+7(495) 666-01-66</a></p>
+        <p>ТЕЛ: <a href="tel:+74956660166">+7(495) 666-01-66</a></p>
       </section>
       <section>
-        <ul>
+        <ul class="footer-socials">
           <li>
             <a href="#">Твиттер</a>
           </li>
@@ -169,8 +174,8 @@
         </ul>
       </section>
       <div class="developers">
+        Website by
         <a href="https://htmlacademy.ru">
-          Website by
           <img
             src="img/logo-htmlacademy.svg"
             width="115"
