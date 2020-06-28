@@ -100,7 +100,6 @@ img {
   color: var(--basic-niagara);
 }
 .site-navigation a:active {
-  mix-blend-mode: normal;
   color: var(--basic-black);
   opacity: 0.3;
 }
