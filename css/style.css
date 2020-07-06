@@ -370,7 +370,13 @@ img {
   font: inherit;
   padding-left: 13px;
   padding-top: 6px;
-  background-color: var(--basic-lavender);
+  background: inherit;
+}
+.input-wrapper:hover {
+  background-color: #ebebeb;
+}
+.input-wrapper:focus {
+  background-color: var(--basic-white);
 }
 .search-item input {
   font-weight: bold;
@@ -465,6 +471,9 @@ img {
   justify-content: space-between;
   background: rgba(255, 255, 255, 0.9);
 }
+.inner-footer {
+  position: static;
+}
 .developers {
   display: flex;
   align-items: center;
@@ -506,6 +515,28 @@ img {
   background-repeat: no-repeat;
   color: var(--basic-white);
 }
+.filter input {
+  display: none;
+}
+.filter li {
+  position: relative;
+  left: 39px;
+}
+.filter li::before {
+  content: "";
+  width: 23px;
+  height: 23px;
+  border: 2px solid white;
+  border-radius: 30%;
+  position: absolute;
+  left: -39px;
+  top: -1px;
+}
+.filter input:checked:before {
+  position: absolute;
+  z-index: 1;
+  background: url(../img/checkbox-on.svg);
+}
 .legend {
   margin: 0;
   margin-bottom: 25px;
@@ -513,10 +544,23 @@ img {
   font-size: 16px;
 }
 .range {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   margin: 0;
   margin-left: 347px;
 }
-
+.range-from-to {
+  display: flex;
+  justify-content: space-around;
+  vertical-align: middle;
+  text-align: center;
+  width: 317px;
+  height: 36px;
+  border: 2px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 2px;
+}
 .sorting {
   display: flex;
   margin-left: 46px;
@@ -599,6 +643,8 @@ img {
   display: flex;
 }
 .more-button {
+  width: 110px;
+  height: 27px;
   text-align: center;
   font-weight: bold;
   color: var(--basic-white);
@@ -608,6 +654,8 @@ img {
   border: none;
 }
 .book-button {
+  width: 110px;
+  height: 27px;
   text-align: center;
   font-weight: bold;
   color: var(--basic-white);
