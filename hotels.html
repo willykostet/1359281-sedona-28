@@ -22,9 +22,9 @@
           />
         </a>
         <ul class="site-navigation">
-          <li><a href="blank.html">Информация</a></li>
-          <li><a href="blank.html">Фото и видео</a></li>
-          <li><a href="blank.html">Карта штата</a></li>
+          <li><a href="#">Информация</a></li>
+          <li><a href="#">Фото и видео</a></li>
+          <li><a href="#">Карта штата</a></li>
           <li><a href="hotels.html">Гостиницы</a></li>
         </ul>
       </nav>
@@ -40,15 +40,31 @@
             <legend class="legend">Инфраструктура:</legend>
             <ul>
               <li>
-                <input type="checkbox" name="pool" id="filter-pool" checked />
+                <input
+                  class="checkbox_input"
+                  type="checkbox"
+                  name="pool"
+                  id="filter-pool"
+                  checked
+                />
                 <label for="filter-pool">Бассейн</label>
               </li>
               <li>
-                <input type="checkbox" name="parking" id="filter-parking" />
+                <input
+                  class="checkbox_input"
+                  type="checkbox"
+                  name="parking"
+                  id="filter-parking"
+                />
                 <label for="filter-parking">Парковка</label>
               </li>
               <li>
-                <input type="checkbox" name="wi-fi" id="filter-wi-fi" />
+                <input
+                  class="checkbox_input"
+                  type="checkbox"
+                  name="wi-fi"
+                  id="filter-wi-fi"
+                />
                 <label for="filter-wi-fi">WI-FI</label>
               </li>
             </ul>
@@ -57,15 +73,28 @@
             <legend class="legend">Тип жилья:</legend>
             <ul>
               <li>
-                <input type="checkbox" name="hotel" id="filter-hotel" checked />
+                <input
+                  class="checkbox_input"
+                  type="checkbox"
+                  name="hotel"
+                  id="filter-hotel"
+                  checked
+                />
                 <label for="filter-hotel">Гостиница</label>
               </li>
               <li>
-                <input type="checkbox" name="motel" id="filter-motel" checked />
+                <input
+                  class="checkbox_input"
+                  type="checkbox"
+                  name="motel"
+                  id="filter-motel"
+                  checked
+                />
                 <label for="filter-motel">Мотель</label>
               </li>
               <li>
                 <input
+                  class="checkbox_input"
                   type="checkbox"
                   name="apartments"
                   id="filter-apartments"
@@ -82,7 +111,36 @@
                 <p>От 0</p>
                 <p>До 3000</p>
               </div>
-              <div class="slider"></div>
+              <div class="slider">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="23"
+                  viewBox="0 0 20 23"
+                >
+                  <path
+                    opacity=".3"
+                    fill="#ABABAB"
+                    d="M10 20C4.477 20 0 15.522 0 10v2c0 5.522 4.477 10 10 10 5.522 0 10-4.478 10-10v-2c0 5.522-4.478 10-10 10z"
+                  />
+                  <circle fill="#FFF" cx="10" cy="10" r="10" />
+                  <circle fill="#ABABAB" cx="10" cy="10" r="2" />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="23"
+                  viewBox="0 0 20 23"
+                >
+                  <path
+                    opacity=".3"
+                    fill="#ABABAB"
+                    d="M10 20C4.477 20 0 15.522 0 10v2c0 5.522 4.477 10 10 10 5.522 0 10-4.478 10-10v-2c0 5.522-4.478 10-10 10z"
+                  />
+                  <circle fill="#FFF" cx="10" cy="10" r="10" />
+                  <circle fill="#ABABAB" cx="10" cy="10" r="2" />
+                </svg>
+              </div>
               <button class="show-button" type="submit">Показать</button>
             </div>
           </fieldset>
@@ -262,13 +320,15 @@
             />
             <div class="hotel-column">
               <h2 class="heading">Villas at Poco Diablo</h2>
-              <div class="hotel-price">
-                <p>Мотель</p>
-                <p>от 3000 Р.</p>
-              </div>
-              <div class="hotel-buttons">
-                <a class="more-button" href="product3.html">Подробнее</a>
-                <a class="book-button" href="product3.html">Забронировать</a>
+              <div class="hotel-cols">
+                <div class="сol-1">
+                  <p>Апартаменты</p>
+                  <a class="more-button" href="#">Подробнее</a>
+                </div>
+                <div class="col-2">
+                  <p>от 2000 Р.</p>
+                  <a class="book-button" href="#">Забронировать</a>
+                </div>
               </div>
             </div>
             <div class="rating-column">

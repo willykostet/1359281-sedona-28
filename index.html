@@ -22,9 +22,9 @@
           />
         </a>
         <ul class="site-navigation container">
-          <li><a href="blank.html">Информация</a></li>
-          <li><a href="blank.html">Фото и видео</a></li>
-          <li><a href="blank.html">Карта штата</a></li>
+          <li><a href="#">Информация</a></li>
+          <li><a href="#">Фото и видео</a></li>
+          <li><a href="#">Карта штата</a></li>
           <li><a href="hotels.html">Гостиницы</a></li>
         </ul>
       </nav>
@@ -144,8 +144,8 @@
         </p>
         <div>
           <div class="button-wrapper">
-            <a href="#">
-              <h2 class="heading">Поиск гостиницы в седоне</h2>
+            <a>
+              <h2 class="heading popup-button">Поиск гостиницы в седоне</h2>
             </a>
           </div>
           <form
@@ -276,13 +276,16 @@
             <button type="submit" class="search-button">Найти</button>
           </form>
         </div>
-        <img
-          class="map"
-          src="img/map.png"
-          width="1199"
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d655625.6071647177!2d-111.7238065892459!3d34.86529929010049!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2sSedona%2C%20AZ%2086336%2C%20USA!5e0!3m2!1sen!2s!4v1594124625079!5m2!1sen!2s"
+          width="1200"
           height="594"
-          alt="Карта Аризоны"
-        />
+          frameborder="0"
+          style="border: 0;"
+          allowfullscreen=""
+          aria-hidden="false"
+          tabindex="0"
+        ></iframe>
       </section>
     </main>
     <footer class="page-footer main-footer">
@@ -343,7 +346,7 @@
       </section>
       <div class="developers">
         Website by
-        <a href="https://htmlacademy.ru">
+        <a href="https://htmlacademy.ru/intensive/htmlcss">
           <img
             class="academy-logo"
             src="img/logo-htmlacademy.svg"
@@ -354,5 +357,6 @@
         </a>
       </div>
     </footer>
+    <script src="/js/popup.js"></script>
   </body>
 </html>
