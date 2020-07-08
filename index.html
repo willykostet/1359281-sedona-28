@@ -24,8 +24,12 @@
         <ul class="site-navigation container">
           <li><a href="#">Информация</a></li>
           <li><a href="#">Фото и видео</a></li>
-          <li><a href="#">Карта штата</a></li>
-          <li><a href="hotels.html">Гостиницы</a></li>
+          <li class="site-navigation-right">
+            <a href="#">Карта штата</a>
+          </li>
+          <li class="site-navigation-right">
+            <a href="hotels.html">Гостиницы</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -142,12 +146,10 @@
           Укажите предполагаемые даты поездки,<br />
           и мы покажем вам лучшие предложения гостиниц в седоне
         </p>
-        <div>
-          <div class="button-wrapper">
-            <a>
-              <h2 class="heading popup-button">Поиск гостиницы в седоне</h2>
-            </a>
-          </div>
+        <div class="popup-container">
+          <a class="heading button-wrapper popup-button" href="#">
+            Поиск гостиницы в седоне
+          </a>
           <form
             class="searchform"
             action="https://echo.htmlacademy.ru"
@@ -209,31 +211,28 @@
               <div class="search-item">
                 <label for="adults">Взрослые:</label>
                 <div class="ages-input-wrapper">
-                  <button type="button" class="minus-button">
+                  <button type="button" class="count-button">
                     <svg
                       width="12"
                       height="3"
                       viewBox="0 0 12 3"
-                      fill="none"
                       xmlns="http://www.w3.org/2000/svg"
                     >
-                      <rect width="12" height="3" fill="#A9A9A9" />
+                      <rect width="12" height="3" />
                     </svg>
                   </button>
                   <input id="adults" type="text" name="number" value="2" />
-                  <button type="button" class="plus-button">
+                  <button type="button" class="count-button">
                     <svg
                       width="11"
                       height="11"
                       viewBox="0 0 11 11"
-                      fill="none"
                       xmlns="http://www.w3.org/2000/svg"
                     >
                       <path
                         fill-rule="evenodd"
                         clip-rule="evenodd"
                         d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z"
-                        fill="#A9A9A9"
                       />
                     </svg>
                   </button>
@@ -242,31 +241,28 @@
               <div class="search-item">
                 <label class="kids-label" for="kids">Дети:</label>
                 <div class="ages-input-wrapper">
-                  <button type="button" class="minus-button">
+                  <button type="button" class="count-button">
                     <svg
                       width="12"
                       height="3"
                       viewBox="0 0 12 3"
-                      fill="none"
                       xmlns="http://www.w3.org/2000/svg"
                     >
-                      <rect width="12" height="3" fill="#A9A9A9" />
+                      <rect width="12" height="3" />
                     </svg>
                   </button>
                   <input id="kids" type="text" name="number" value="0" />
-                  <button type="button" class="plus-button">
+                  <button type="button" class="count-button">
                     <svg
                       width="11"
                       height="11"
                       viewBox="0 0 11 11"
-                      fill="none"
                       xmlns="http://www.w3.org/2000/svg"
                     >
                       <path
                         fill-rule="evenodd"
                         clip-rule="evenodd"
                         d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z"
-                        fill="#A9A9A9"
                       />
                     </svg>
                   </button>
@@ -288,7 +284,7 @@
         ></iframe>
       </section>
     </main>
-    <footer class="page-footer main-footer">
+    <footer class="page-footer page-footer--main">
       <h3 class="visually-hidden">Контакты</h3>
       <section class="footer-contacts">
         <a href="#"> #visitSEDONA </a>

@@ -12,8 +12,8 @@
   </head>
   <body class="page-body">
     <header class="main-header">
-      <nav class="main-navigation container">
-        <a href="index.html" class="main-header-logo">
+      <nav class="main-navigation">
+        <a href="index.html" class="main-header-logo inner-logo">
           <img
             src="img/logo-sedona.svg"
             width="138"
@@ -21,11 +21,15 @@
             alt="Логотип Седоны"
           />
         </a>
-        <ul class="site-navigation">
+        <ul class="site-navigation container">
           <li><a href="#">Информация</a></li>
           <li><a href="#">Фото и видео</a></li>
-          <li><a href="#">Карта штата</a></li>
-          <li><a href="hotels.html">Гостиницы</a></li>
+          <li class="site-navigation-right">
+            <a href="#">Карта штата</a>
+          </li>
+          <li class="site-navigation-right">
+            <a href="hotels.html">Гостиницы</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -36,113 +40,115 @@
           action="https://echo.htmlacademy.ru"
           method="get"
         >
-          <fieldset>
-            <legend class="legend">Инфраструктура:</legend>
-            <ul>
-              <li>
-                <input
-                  class="checkbox_input"
-                  type="checkbox"
-                  name="pool"
-                  id="filter-pool"
-                  checked
-                />
-                <label for="filter-pool">Бассейн</label>
-              </li>
-              <li>
-                <input
-                  class="checkbox_input"
-                  type="checkbox"
-                  name="parking"
-                  id="filter-parking"
-                />
-                <label for="filter-parking">Парковка</label>
-              </li>
-              <li>
-                <input
-                  class="checkbox_input"
-                  type="checkbox"
-                  name="wi-fi"
-                  id="filter-wi-fi"
-                />
-                <label for="filter-wi-fi">WI-FI</label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset>
-            <legend class="legend">Тип жилья:</legend>
-            <ul>
-              <li>
-                <input
-                  class="checkbox_input"
-                  type="checkbox"
-                  name="hotel"
-                  id="filter-hotel"
-                  checked
-                />
-                <label for="filter-hotel">Гостиница</label>
-              </li>
-              <li>
-                <input
-                  class="checkbox_input"
-                  type="checkbox"
-                  name="motel"
-                  id="filter-motel"
-                  checked
-                />
-                <label for="filter-motel">Мотель</label>
-              </li>
-              <li>
-                <input
-                  class="checkbox_input"
-                  type="checkbox"
-                  name="apartments"
-                  id="filter-apartments"
-                  checked
-                />
-                <label for="filter-apartments">Апартаменты</label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset>
-            <div class="range">
-              <p class="legend">Стоимость в сутки (Р):</p>
-              <div class="range-from-to">
-                <p>От 0</p>
-                <p>До 3000</p>
-              </div>
-              <div class="slider">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="23"
-                  viewBox="0 0 20 23"
-                >
-                  <path
-                    opacity=".3"
-                    fill="#ABABAB"
-                    d="M10 20C4.477 20 0 15.522 0 10v2c0 5.522 4.477 10 10 10 5.522 0 10-4.478 10-10v-2c0 5.522-4.478 10-10 10z"
+          <div class="fieldsets">
+            <fieldset>
+              <legend class="legend">Инфраструктура:</legend>
+              <ul>
+                <li>
+                  <input
+                    class="checkbox_input"
+                    type="checkbox"
+                    name="pool"
+                    id="filter-pool"
+                    checked
                   />
-                  <circle fill="#FFF" cx="10" cy="10" r="10" />
-                  <circle fill="#ABABAB" cx="10" cy="10" r="2" />
-                </svg>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="23"
-                  viewBox="0 0 20 23"
-                >
-                  <path
-                    opacity=".3"
-                    fill="#ABABAB"
-                    d="M10 20C4.477 20 0 15.522 0 10v2c0 5.522 4.477 10 10 10 5.522 0 10-4.478 10-10v-2c0 5.522-4.478 10-10 10z"
+                  <label for="filter-pool">Бассейн</label>
+                </li>
+                <li>
+                  <input
+                    class="checkbox_input"
+                    type="checkbox"
+                    name="parking"
+                    id="filter-parking"
                   />
-                  <circle fill="#FFF" cx="10" cy="10" r="10" />
-                  <circle fill="#ABABAB" cx="10" cy="10" r="2" />
-                </svg>
-              </div>
-              <button class="show-button" type="submit">Показать</button>
+                  <label for="filter-parking">Парковка</label>
+                </li>
+                <li>
+                  <input
+                    class="checkbox_input"
+                    type="checkbox"
+                    name="wi-fi"
+                    id="filter-wi-fi"
+                  />
+                  <label for="filter-wi-fi">WI-FI</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset>
+              <legend class="legend">Тип жилья:</legend>
+              <ul>
+                <li>
+                  <input
+                    class="checkbox_input"
+                    type="checkbox"
+                    name="hotel"
+                    id="filter-hotel"
+                    checked
+                  />
+                  <label for="filter-hotel">Гостиница</label>
+                </li>
+                <li>
+                  <input
+                    class="checkbox_input"
+                    type="checkbox"
+                    name="motel"
+                    id="filter-motel"
+                    checked
+                  />
+                  <label for="filter-motel">Мотель</label>
+                </li>
+                <li>
+                  <input
+                    class="checkbox_input"
+                    type="checkbox"
+                    name="apartments"
+                    id="filter-apartments"
+                    checked
+                  />
+                  <label for="filter-apartments">Апартаменты</label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <fieldset>
+            <p class="legend">Стоимость в сутки (Р):</p>
+            <div class="range-from-to">
+              <p class="from-zero">От 0</p>
+              <p>До 3000</p>
             </div>
+            <div class="slider">
+              <svg
+                class="left-slider-button"
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="23"
+                viewBox="0 0 20 23"
+              >
+                <path
+                  opacity=".3"
+                  fill="#ABABAB"
+                  d="M10 20C4.477 20 0 15.522 0 10v2c0 5.522 4.477 10 10 10 5.522 0 10-4.478 10-10v-2c0 5.522-4.478 10-10 10z"
+                />
+                <circle fill="#FFF" cx="10" cy="10" r="10" />
+                <circle fill="#ABABAB" cx="10" cy="10" r="2" />
+              </svg>
+              <svg
+                class="right-slider-button"
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="23"
+                viewBox="0 0 20 23"
+              >
+                <path
+                  opacity=".3"
+                  fill="#ABABAB"
+                  d="M10 20C4.477 20 0 15.522 0 10v2c0 5.522 4.477 10 10 10 5.522 0 10-4.478 10-10v-2c0 5.522-4.478 10-10 10z"
+                />
+                <circle fill="#FFF" cx="10" cy="10" r="10" />
+                <circle fill="#ABABAB" cx="10" cy="10" r="2" />
+              </svg>
+            </div>
+            <button class="show-button" type="submit">Показать</button>
           </fieldset>
         </form>
       </section>
@@ -166,7 +172,7 @@
                 height="10"
                 viewBox="0 0 11 10"
               >
-                <path fill="#CACACA" d="M5.5 0L0 10h11z" />
+                <path d="M5.5 0L0 10h11z" />
               </svg>
             </button>
             <button class="down-dir" type="button">
@@ -176,7 +182,7 @@
                 height="10"
                 viewBox="0 0 11 10"
               >
-                <path fill="#81B3D2" d="M5.5 10L0 0h11" />
+                <path d="M5.5 10L0 0h11" />
               </svg>
             </button>
           </div>
@@ -362,7 +368,7 @@
         </ul>
       </section>
     </main>
-    <footer class="page-footer inner-footer">
+    <footer class="page-footer">
       <h3 class="visually-hidden">Контакты</h3>
       <section class="footer-contacts">
         <a href="#"> #visitSEDONA </a>
