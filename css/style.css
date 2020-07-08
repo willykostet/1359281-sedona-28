@@ -325,9 +325,10 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  animation: bounce 0.6s;
+  transition: all 1s linear;
 }
 .searchform-close {
-  animation: bounce 0.6s;
   display: none;
 }
 
@@ -335,7 +336,7 @@ img {
 
 @keyframes bounce {
   0% {
-    transform: translateY(2000px);
+    transform: translateY(-150px);
   }
 
   70% {
@@ -607,14 +608,14 @@ img {
   content: "";
   width: 27px;
   height: 23px;
-  background-image: url(/img/checkbox-off.svg);
+  background-image: url(../img/checkbox-off.svg);
   background-repeat: no-repeat;
   position: absolute;
   left: -39px;
   top: -3px;
 }
 .checkbox_input:checked + label:before {
-  background-image: url(/img/checkbox-on.svg);
+  background-image: url(../img/checkbox-on.svg);
 }
 .legend {
   margin: 0;
