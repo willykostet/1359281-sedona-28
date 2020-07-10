@@ -13,7 +13,7 @@
   <body class="page-body">
     <header class="main-header">
       <nav class="main-navigation">
-        <a href="index.html" class="main-header-logo inner-logo">
+        <a href='index.html' class="main-header-logo">
           <img
             src="img/logo-sedona.svg"
             width="138"
@@ -22,14 +22,18 @@
           />
         </a>
         <ul class="site-navigation container">
+          <div class="site-navigation-left">
           <li><a href="#">Информация</a></li>
           <li><a href="#">Фото и видео</a></li>
-          <li class="site-navigation-right">
-            <a href="#">Карта штата</a>
-          </li>
-          <li class="site-navigation-right">
-            <a href="hotels.html">Гостиницы</a>
-          </li>
+        </div>
+          <div class="site-navigation-right">
+            <li class=>
+              <a href="#">Карта штата</a>
+            </li>
+            <li class=>
+              <a href="hotels.html">Гостиницы</a>
+            </li>
+          </div>
         </ul>
       </nav>
     </header>
@@ -110,11 +114,15 @@
               </ul>
             </fieldset>
           </div>
-          <fieldset>
+          <fieldset class='range'>
             <p class="legend">Стоимость в сутки (Р):</p>
             <div class="range-from-to">
-              <p class="from-zero">От 0</p>
-              <p>До 3000</p>
+              <div class="from">
+              <label for='from-label' class="from-zero"> От </label><input name='from-label' type='text'>0</input>
+            </div>
+            <div class="to">
+              <label for='to-label'>До</label><input name='to-label' id='from-label' type='text'>3000</input>
+            </div>
             </div>
             <div class="slider">
               <svg

@@ -22,14 +22,18 @@
           />
         </a>
         <ul class="site-navigation container">
+          <div class="site-navigation-left">
           <li><a href="#">Информация</a></li>
           <li><a href="#">Фото и видео</a></li>
-          <li class="site-navigation-right">
-            <a href="#">Карта штата</a>
-          </li>
-          <li class="site-navigation-right">
-            <a href="hotels.html">Гостиницы</a>
-          </li>
+        </div>
+          <div class="site-navigation-right">
+            <li class=>
+              <a href="#">Карта штата</a>
+            </li>
+            <li class=>
+              <a href="hotels.html">Гостиницы</a>
+            </li>
+          </div>
         </ul>
       </nav>
     </header>
@@ -38,8 +42,8 @@
         <h1 class="visually-hidden">Седона</h1>
         <div class="jagged-wrapper">
           <img
-            height="351px"
-            width="457px"
+            height="351"
+            width="457"
             src="img/intro-welcome.svg"
             alt="Добро пожаловать в Седону, ведь Гранд-Каньон-отстой!"
           />
@@ -147,17 +151,18 @@
           и мы покажем вам лучшие предложения гостиниц в седоне
         </p>
         <div class="popup-container">
-          <a class="heading button-wrapper popup-button" href="#">
+          <button class="heading button-wrapper popup-button" href="#">
             Поиск гостиницы в седоне
-          </a>
+          </button>
           <form
             class="searchform"
             action="https://echo.htmlacademy.ru"
             method="post"
           >
+          <div class='dates'>
             <div class="search-item">
               <label for="arrival-date">Дата заезда:</label>
-              <div class="input-wrapper" class="date-field">
+              <div class="input-wrapper">
                 <input
                   id="arrival-date"
                   type="text"
@@ -181,9 +186,9 @@
                 </button>
               </div>
             </div>
-            <div class="search-item">
-              <label for="departure-date">Дата выезда:</label>
-              <div class="input-wrapper" class="date-field">
+            <div class="search-item departure-item">
+              <label class='departure' for="departure-date">Дата выезда:</label>
+              <div class="input-wrapper">
                 <input
                   id="departure-date"
                   type="text"
@@ -207,6 +212,7 @@
                 </button>
               </div>
             </div>
+          </div>
             <div class="ages">
               <div class="search-item">
                 <label for="adults">Взрослые:</label>
@@ -273,10 +279,10 @@
           </form>
         </div>
         <iframe
+          class='map'
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d655625.6071647177!2d-111.7238065892459!3d34.86529929010049!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2sSedona%2C%20AZ%2086336%2C%20USA!5e0!3m2!1sen!2s!4v1594124625079!5m2!1sen!2s"
           width="1200"
           height="594"
-          frameborder="0"
           style="border: 0;"
           allowfullscreen=""
           aria-hidden="false"

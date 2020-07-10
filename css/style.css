@@ -89,8 +89,8 @@ img {
 }
 
 .site-navigation {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  display: flex;
+  justify-content: space-between;
   padding: 0;
   padding-top: 14px;
   padding-bottom: 16px;
@@ -100,7 +100,16 @@ img {
 }
 
 .site-navigation-right {
-  text-align: right;
+  display: flex;
+}
+.site-navigation-right li {
+  margin-left: 147px;
+}
+.site-navigation-left {
+  display: flex;
+}
+.site-navigation-left li {
+  margin-right: 133px;
 }
 .site-navigation a {
   display: block;
@@ -117,7 +126,7 @@ img {
 }
 /* Main-Body */
 .intro {
-  background-image: url("../img/main.jpg");
+  background-image: url(../img/main.jpg);
   background-position: center, 0 0;
   background-repeat: no-repeat;
   text-align: center;
@@ -137,7 +146,7 @@ img {
   width: 100%;
   height: 60px;
   background-image: url(../img/intro-mask.svg);
-  background-size: 1200px 59px;
+  background-size: 1200px 60px;
   background-repeat: repeat;
   bottom: 0px;
   right: 0;
@@ -159,7 +168,7 @@ img {
   width: 470px;
   height: 80px;
   margin: 0 auto;
-  margin-top: 43px;
+  margin-top: 36px;
   margin-bottom: 17px;
 }
 .heading {
@@ -240,7 +249,8 @@ img {
   padding-bottom: 54px;
 }
 .bottom-reason {
-  width: 400px;
+  min-height: 256px;
+  min-width: 400px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -260,7 +270,7 @@ img {
   margin: 0;
 }
 .reason-number {
-  margin: 25px 0;
+  margin: 26px 0;
   margin-bottom: 23px;
 }
 .reason-description {
@@ -282,9 +292,10 @@ img {
   line-height: 24px;
   font-weight: bold;
   margin-top: 57px;
-  margin-bottom: 39px;
+  margin-bottom: 33px;
 }
 .interest-2 {
+  line-height: 24px;
   margin: 0;
 }
 /* Search */
@@ -292,17 +303,23 @@ img {
   text-align: center;
 }
 
-.hotels-search a {
+.hotels-search button {
   color: var(--basic-white);
 }
 .button-wrapper {
+  display: inline-block;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
   padding: 30px 125px;
+  padding-left: 135px;
+  padding-top: 29px;
   display: block;
   background-color: var(--basic-russet);
   width: 568px;
   height: 86px;
   margin: 0 auto;
-  margin-top: 50px;
+  margin-top: 43px;
 }
 .button-wrapper:hover,
 .button-wrapper:focus {
@@ -324,7 +341,6 @@ img {
   padding: 55px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   animation: bounce 0.6s;
   transition: all 1s linear;
 }
@@ -372,6 +388,7 @@ img {
   fill: var(--basic-niagara);
 }
 .search-item {
+  margin-bottom: 28px;
   align-items: center;
   display: flex;
   justify-content: space-between;
@@ -379,11 +396,20 @@ img {
   font-weight: bold;
   line-height: 26px;
 }
+.departure-item {
+  margin-bottom: 30px;
+}
 .kids-label {
   padding-left: 50px;
 }
 .ages {
   display: flex;
+  justify-content: space-between;
+  margin-bottom: 28px;
+}
+.dates {
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
 .ages-input-wrapper {
@@ -479,7 +505,7 @@ img {
   margin: 0 auto;
   cursor: pointer;
   padding: 0;
-  margin-top: 25px;
+  margin-top: 33px;
   width: 137px;
   height: 36px;
   border: 2px solid #ffffff;
@@ -495,8 +521,13 @@ img {
   background: var(--basic-white);
   color: var(--basic-black);
 }
+.map {
+  background-image: url(../img/map.png);
+}
 /* Footer */
 .footer-contacts {
+  padding-left: 5px;
+  padding-bottom: 8px;
   text-align: center;
   font-weight: bold;
   font-size: 21px;
@@ -515,6 +546,8 @@ img {
   width: 150px;
   margin: 0 auto;
   padding: 0;
+  padding-top: 5px;
+  padding-right: 5px;
   list-style: none;
 }
 .social-buttons {
@@ -555,12 +588,13 @@ img {
   background: rgba(255, 255, 255, 0.9);
 }
 .developers {
+  padding-top: 9px;
   display: flex;
   align-items: center;
   line-height: 26px;
 }
 .developers a {
-  margin-left: 8px;
+  margin-left: 6px;
 }
 /* Filters */
 .filter {
@@ -593,17 +627,17 @@ img {
   background-repeat: no-repeat;
   color: var(--basic-white);
 }
-.filter input {
+.fieldsets input {
   position: absolute;
   -webkit-appearance: none;
   appearance: none;
 }
-.filter label {
+.fieldsets label {
   cursor: pointer;
   position: relative;
   left: 39px;
 }
-.filter label::before {
+.fieldsets label::before {
   cursor: pointer;
   content: "";
   width: 27px;
@@ -627,26 +661,46 @@ img {
 p.legend {
   margin: 0;
 }
+.range {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
 .range-from-to {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   width: 317px;
   height: 36px;
+  padding: 0 50px;
+  padding-top: 7px;
+  padding-bottom: 8px;
   border: 2px solid #ffffff;
   box-sizing: border-box;
   border-radius: 2px;
-  margin: 20px 0;
+  margin: 12px 0;
+  margin-bottom: 17px;
+}
+.from {
+  padding-left: 16px;
+}
+.range input {
+  display: none;
 }
 .from-zero {
   position: relative;
 }
+.range-from-to label {
+  margin-right: 2px;
+}
 .from-zero:after {
   content: "";
   position: absolute;
-  border-right: 2px solid white;
-  height: 22px;
-  left: 360%;
+  border-right: 3px solid white;
+  height: 19px;
+  left: 90px;
+  bottom: 2px;
+  top: 1px;
 }
 .slider {
   display: flex;
@@ -787,6 +841,9 @@ p.legend {
 }
 .hotel-cols {
   display: flex;
+}
+.hotel-cols p {
+  color: var(--basic-dark);
 }
 .more-button {
   display: block;
