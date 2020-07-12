@@ -118,10 +118,10 @@
             <p class="legend">Стоимость в сутки (Р):</p>
             <div class="range-from-to">
               <div class="from">
-              <label for='from-label' class="from-zero"> От </label><input name='from-label' type='text'>0</input>
+              <label for='from-input' class="from-zero"> От<input name='from-input' id='to-input' type='text' value='0'></input></label>
             </div>
             <div class="to">
-              <label for='to-label'>До</label><input name='to-label' id='from-label' type='text'>3000</input>
+              <label for='to-input'>До<input name='to-label' id='to-input' type='text' value='3000'></input></label>
             </div>
             </div>
             <div class="slider">
@@ -173,7 +173,7 @@
             </ul>
           </div>
           <div class="sorting-buttons">
-            <button class="up-dir" type="button">
+            <a class="up-dir" type="button">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="11"
@@ -182,8 +182,8 @@
               >
                 <path d="M5.5 0L0 10h11z" />
               </svg>
-            </button>
-            <button class="down-dir" type="button">
+            </a>
+            <a class="down-dir" type="button">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="11"
@@ -192,7 +192,7 @@
               >
                 <path d="M5.5 10L0 0h11" />
               </svg>
-            </button>
+            </a>
           </div>
         </div>
         <ul class="hotels-list">

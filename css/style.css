@@ -264,6 +264,7 @@ img {
 }
 .bottom-reason h3 {
   display: inline-block;
+  vertical-align: middle;
   width: 150px;
   font-weight: bold;
   font-size: 21px;
@@ -279,6 +280,7 @@ img {
 }
 .reason h3 {
   display: inline-block;
+  vertical-align: middle;
   width: 150px;
   font-weight: bold;
   font-size: 21px;
@@ -312,7 +314,7 @@ img {
   outline: none;
   text-transform: uppercase;
   padding: 30px 125px;
-  padding-left: 135px;
+  padding-left: 128px;
   padding-top: 29px;
   display: block;
   background-color: var(--basic-russet);
@@ -505,7 +507,8 @@ img {
   margin: 0 auto;
   cursor: pointer;
   padding: 0;
-  margin-top: 33px;
+  margin-top: 35px;
+  padding-left: 4px;
   width: 137px;
   height: 36px;
   border: 2px solid #ffffff;
@@ -684,14 +687,19 @@ p.legend {
 .from {
   padding-left: 16px;
 }
+
 .range input {
-  display: none;
+  width: 50px;
+  background: inherit;
+  border: none;
+  color: inherit;
+  margin-left: 5px;
 }
 .from-zero {
   position: relative;
 }
 .range-from-to label {
-  margin-right: 2px;
+  display: flex;
 }
 .from-zero:after {
   content: "";
@@ -767,9 +775,11 @@ p.legend {
   padding: 30px 73px;
 }
 .up-dir {
+  cursor: pointer;
   fill: #cacaca;
   background: inherit;
   border: 0;
+  margin-right: 10px;
 }
 .up-dir:hover,
 .up-dir:focus {
@@ -780,6 +790,7 @@ p.legend {
   fill: var(--basic-niagara);
 }
 .down-dir {
+  cursor: pointer;
   fill: var(--basic-niagara);
   background: inherit;
   border: 0;
