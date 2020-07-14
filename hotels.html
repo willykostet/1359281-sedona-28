@@ -22,18 +22,10 @@
           />
         </a>
         <ul class="site-navigation container">
-          <div class="site-navigation-left">
           <li><a href="#">Информация</a></li>
           <li><a href="#">Фото и видео</a></li>
-        </div>
-          <div class="site-navigation-right">
-            <li class=>
-              <a href="#">Карта штата</a>
-            </li>
-            <li class=>
-              <a href="hotels.html">Гостиницы</a>
-            </li>
-          </div>
+          <li><a href="#">Карта штата</a></li>
+          <li><a class='current-page' href="hotels.html">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
@@ -118,10 +110,10 @@
             <p class="legend">Стоимость в сутки (Р):</p>
             <div class="range-from-to">
               <div class="from">
-              <label for='from-input' class="from-zero"> От<input name='from-input' id='to-input' type='text' value='0'></input></label>
+              <label for='from-input' class="from-zero"> От<input name='from-input' id='from-input' type='text' value='0'></input></label>
             </div>
             <div class="to">
-              <label for='to-input'>До<input name='to-label' id='to-input' type='text' value='3000'></input></label>
+              <label for='to-input'>До<input name='to-input' id='to-input' type='text' value='3000'></input></label>
             </div>
             </div>
             <div class="slider">
@@ -167,13 +159,13 @@
           <div class="sorting">
             <p>Сортировка:</p>
             <ul class="sorting-list">
-              <li><a href="">По цене</a></li>
+              <li><a class='active-sorting' href="">По цене</a></li>
               <li><a href="">По типу</a></li>
               <li><a href="">По рейтингу</a></li>
             </ul>
           </div>
           <div class="sorting-buttons">
-            <a class="up-dir" type="button">
+            <a href='#' class="up-dir" type="button">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="11"
@@ -183,7 +175,7 @@
                 <path d="M5.5 0L0 10h11z" />
               </svg>
             </a>
-            <a class="down-dir" type="button">
+            <a href='#' class="down-dir" type="button">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="11"
