@@ -8,9 +8,8 @@ button.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup.classList.toggle("searchform-close");
 });
-
 popup.addEventListener("sumbit", function (evt) {
-  if ((!arrivalDate.value = "" || !departureDate.value = "")) {
+  if (!arrivalDate.value || !departureDate.value) {
     evt.preventDefault();
     popup.classList.remove("popup-error");
     popup.offsetWidth = popup.offsetWidth;

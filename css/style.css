@@ -323,15 +323,13 @@ a.current-page {
   cursor: pointer;
   position: relative;
   z-index: 2;
-  display: inline-block;
-  vertical-align: middle;
+  display: block;
   border: none;
   outline: none;
   text-transform: uppercase;
   padding: 30px 125px;
   padding-left: 128px;
   padding-top: 29px;
-  display: block;
   background-color: var(--basic-russet);
   width: 568px;
   height: 86px;
