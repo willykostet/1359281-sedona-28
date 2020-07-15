@@ -194,8 +194,10 @@ a.current-page {
 }
 .features-list {
   list-style: none;
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-row-gap: 30px;
+  align-items: flex-start;
   padding: 0;
   margin-top: 55px;
   margin-bottom: 81px;
@@ -216,7 +218,7 @@ a.current-page {
   font-weight: bold;
   font-size: 21px;
   margin-top: 29px;
-  margin-bottom: 25px;
+  margin-bottom: 26px;
 }
 .icon1 {
   width: 75px;
@@ -359,6 +361,9 @@ a.current-page {
   animation: bounce 0.6s;
   transition: all 1s linear;
 }
+.popup-error {
+  animation: shake 0.6s;
+}
 .searchform-close {
   display: none;
 }
@@ -380,6 +385,27 @@ a.current-page {
 
   100% {
     transform: translateY(0);
+  }
+}
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
   }
 }
 /*                   */
@@ -602,6 +628,8 @@ a.current-page {
   justify-content: space-between;
 }
 .page-footer--main {
+  padding-top: 20px;
+  padding-bottom: 42px;
   position: absolute;
   width: 100%;
   bottom: 0;
@@ -656,7 +684,7 @@ a.current-page {
 }
 .filters {
   background-image: url(../img/background.jpg);
-  background-size: auto 100%;
+  background-size: cover;
   background-color: var(--special-marengo);
   background-repeat: no-repeat;
   color: var(--basic-white);

@@ -8,7 +8,7 @@
       rel="stylesheet"
     />
     <link href="css/normalize.css" rel="stylesheet" />
-    <link href="css/min-style.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
   </head>
   <body class="page-body">
     <header class="main-header">
@@ -156,6 +156,7 @@
                 <label for="arrival-date">Дата заезда:</label>
                 <div class="input-wrapper">
                   <input
+                    class="arrival-input"
                     id="arrival-date"
                     type="text"
                     name="date"
@@ -188,6 +189,7 @@
                 >
                 <div class="input-wrapper">
                   <input
+                    class="departure-input"
                     id="departure-date"
                     type="text"
                     name="date"
@@ -311,7 +313,7 @@
     <footer class="page-footer page-footer--main">
       <h3 class="visually-hidden">Контакты</h3>
       <section class="footer-contacts">
-        <a href="#"> #visitSEDONA </a>
+        <a class="hash" href="#"> #visitSEDONA </a>
         <p>ТЕЛ: <a href="tel:+74956660166">+7(495) 666-01-66</a></p>
       </section>
       <section class="social-buttons">
@@ -383,6 +385,6 @@
         </a>
       </div>
     </footer>
-    <script src="js/min-popup.js"></script>
+    <script src="js/popup.js"></script>
   </body>
 </html>
