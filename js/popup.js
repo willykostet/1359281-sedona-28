@@ -9,9 +9,11 @@ button.addEventListener("click", function (evt) {
   popup.classList.toggle("searchform-close");
 });
 
-popup.addEventListener("submit", function (evt) {
-  if (!arrivalDate.value || !departureDate.value) {
+popup.addEventListener("sumbit", function (evt) {
+  if ((!arrivalDate.value = "" || !departureDate.value = "")) {
     evt.preventDefault();
+    popup.classList.remove("popup-error");
+    popup.offsetWidth = popup.offsetWidth;
     popup.classList.add("popup-error");
   }
 });
