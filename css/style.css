@@ -106,7 +106,7 @@ img {
   margin: 0;
   list-style: none;
 }
-.site-navigation li:nth-child(3n),
+.site-navigation li:nth-child(4n + 3),
 .site-navigation li:nth-child(4n) {
   text-align: right;
 }
@@ -127,12 +127,14 @@ a.current-page {
 /* Main-Body */
 .intro {
   background-image: url(../img/main.jpg);
+  background-color: #6d869c;
   background-position: center, 0 0;
   background-repeat: no-repeat;
   text-align: center;
   width: 100%;
   margin: 0 auto;
   position: relative;
+  background-size: auto 100%;
 }
 .jagged-wrapper img {
   margin-top: 77px;
@@ -147,9 +149,10 @@ a.current-page {
   height: 60px;
   background-image: url(../img/intro-mask.svg);
   background-size: 1200px 60px;
-  background-repeat: repeat;
+  background-repeat: no-repeat;
   bottom: 0px;
   right: 0;
+  background-position: 0px 3px;
 }
 .reasons-why h2 {
   color: var(--basic-dark);
@@ -435,6 +438,10 @@ a.current-page {
   text-align: center;
   width: 38px;
 }
+.ages-input-wrapper input:focus {
+  border: 2px solid var(--special-lavender);
+  background-color: var(--basic-white);
+}
 .ages-input-wrapper:hover {
   background-color: var(--basic-linen);
 }
@@ -474,7 +481,7 @@ a.current-page {
   background-color: var(--basic-linen);
 }
 
-.input-wrapper:focus {
+.input-wrapper input:focus {
   border: 2px solid var(--special-lavender);
   background-color: var(--basic-white);
 }
@@ -513,7 +520,8 @@ a.current-page {
   margin: 0 auto;
   cursor: pointer;
   padding: 0;
-  margin-top: 35px;
+  margin-top: 33px;
+  margin-right: 95px;
   width: 137px;
   height: 36px;
   border: 2px solid white;
@@ -644,6 +652,7 @@ a.current-page {
 }
 .filters {
   background-image: url(../img/background.jpg);
+  background-size: auto 100%;
   background-color: #47627c;
   background-repeat: no-repeat;
   color: var(--basic-white);
@@ -709,7 +718,7 @@ p.legend {
   box-sizing: border-box;
   border-radius: 2px;
   margin: 12px 0;
-  margin-bottom: 17px;
+  margin-bottom: 20px;
 }
 .from {
   padding-left: 16px;
@@ -740,7 +749,6 @@ p.legend {
   content: "";
   position: relative;
   border-bottom: 2px solid white;
-  background-image: url(../img/filter-button.svg);
 }
 .slider:before {
   content: "";
@@ -751,6 +759,7 @@ p.legend {
   width: 55px;
 }
 .left-slider-button {
+  cursor: pointer;
   content: "";
   width: 19px;
   height: 21px;
@@ -766,6 +775,7 @@ p.legend {
   background-image: url(../img/filter-big-button.svg);
 }
 .right-slider-button {
+  cursor: pointer;
   content: "";
   width: 19px;
   height: 21px;
@@ -892,7 +902,7 @@ a.active-sorting {
 }
 .hotel-column p {
   margin-top: 7px;
-  margin-bottom: 15px;
+  margin-bottom: 18px;
 }
 .hotel-column h2:hover,
 .hotel-column h2:focus {
