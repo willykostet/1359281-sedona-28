@@ -318,6 +318,7 @@ a.current-page {
   position: relative;
   z-index: 2;
   display: inline-block;
+  vertical-align: middle;
   border: none;
   outline: none;
   text-transform: uppercase;
@@ -542,7 +543,7 @@ a.current-page {
 /* Footer */
 .footer-contacts {
   padding-left: 5px;
-  padding-bottom: 8px;
+  margin-bottom: 7px;
   text-align: center;
   font-weight: bold;
   font-size: 21px;
@@ -557,17 +558,10 @@ a.current-page {
 }
 .footer-socials {
   display: flex;
-  justify-content: space-between;
-  width: 150px;
-  margin: 0 auto;
+  width: 155px;
   padding: 0;
-  padding-top: 5px;
-  padding-right: 5px;
   list-style: none;
-}
-.social-buttons {
-  display: flex;
-  flex-direction: column-reverse;
+  padding-right: 8px;
 }
 .social-button {
   display: flex;
@@ -575,6 +569,7 @@ a.current-page {
   justify-content: center;
   width: 46px;
   height: 48px;
+  margin-right: 6px;
   background-color: var(--basic-niagara);
   color: inherit;
 }
@@ -591,8 +586,8 @@ a.current-page {
 }
 .page-footer {
   padding-left: 124px;
-  padding-right: 140px;
-  padding-top: 23px;
+  padding-right: 136px;
+  padding-top: 19px;
   padding-bottom: 36px;
   display: flex;
   justify-content: space-between;
@@ -612,7 +607,7 @@ a.current-page {
   line-height: 26px;
 }
 .developers a {
-  margin-left: 6px;
+  margin-left: 5px;
 }
 .developers svg {
   fill: var(--basic-black);
@@ -834,7 +829,8 @@ a.active-sorting {
 .sorting-row {
   display: flex;
   align-items: center;
-  padding: 30px 73px;
+  padding: 27px 73px;
+  padding-bottom: 31px;
 }
 .up-dir {
   cursor: pointer;
@@ -893,16 +889,15 @@ a.active-sorting {
   align-self: flex-end;
 }
 .hotel-column {
-  margin-left: 28px;
+  margin-left: 30px;
 }
 .hotel-column h2 {
   cursor: pointer;
   margin: 0;
-  padding-left: 1px;
 }
 .hotel-column p {
-  margin-top: 7px;
-  margin-bottom: 18px;
+  margin-top: 8px;
+  margin-bottom: 16px;
 }
 .hotel-column h2:hover,
 .hotel-column h2:focus {
